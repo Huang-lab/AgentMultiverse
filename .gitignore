@@ -1,0 +1,18 @@
+# Rebuilt from CLAUDE.md (Rebuild section) or produced by runs
+/bin/
+/env/
+/env_hail/
+/ref/
+/data/
+/prep/
+/results/
+/.fmcache/
+/.memgate/
+/tools/polyfun/
+
+# Local state
+.claude/hooks/UNBLIND
+.claude/settings.local.json
+__pycache__/
+*.pyc
+.DS_Store

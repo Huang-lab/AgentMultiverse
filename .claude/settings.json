@@ -1,0 +1,48 @@
+{
+  "permissions": {
+    "deny": [
+      "Read(//Users/kuan-lin.huang/Projects/GWASAgentLite_archive/**)",
+      "Edit(//Users/kuan-lin.huang/Projects/GWASAgentLite_archive/**)",
+      "Read(~/.claude/projects/-Users-kuan-lin-huang-Projects-GWASAgentLite/*.jsonl)",
+      "Read(~/.claude/projects/-Users-kuan-lin-huang-Projects-GWASAgentLite/46fa2140-2c99-45cb-8d31-04cf397027a3/**)",
+      "Read(~/.claude/projects/-Users-kuan-lin-huang-Projects-GWASAgentLite/f614b217-f199-44f5-a9d8-797e197ce4fa/**)",
+      "Read(//private/tmp/claude-502/-Users-kuan-lin-huang-Projects-GWASAgentLite/46fa2140-2c99-45cb-8d31-04cf397027a3/**)",
+      "Read(//private/tmp/claude-502/-Users-kuan-lin-huang-Projects-GWASAgentLite/f614b217-f199-44f5-a9d8-797e197ce4fa/**)",
+      "Read(//tmp/claude-502/-Users-kuan-lin-huang-Projects-GWASAgentLite/46fa2140-2c99-45cb-8d31-04cf397027a3/**)",
+      "Read(//tmp/claude-502/-Users-kuan-lin-huang-Projects-GWASAgentLite/f614b217-f199-44f5-a9d8-797e197ce4fa/**)",
+      "Read(//Users/kuan-lin.huang/Projects/GWASAgentLite/.fmcache/**)",
+      "Edit(//Users/kuan-lin.huang/Projects/GWASAgentLite/.fmcache/**)",
+      "Read(//Users/kuan-lin.huang/Projects/AgentMultiverse_archive/**)",
+      "Edit(//Users/kuan-lin.huang/Projects/AgentMultiverse_archive/**)",
+      "Read(~/.claude/projects/-Users-kuan-lin-huang-Projects-AgentMultiverse/*.jsonl)",
+      "Read(//private/tmp/claude-502/-Users-kuan-lin-huang-Projects-AgentMultiverse/**)",
+      "Read(//tmp/claude-502/-Users-kuan-lin-huang-Projects-AgentMultiverse/**)",
+      "Read(//Users/kuan-lin.huang/Projects/AgentMultiverse/.fmcache/**)",
+      "Edit(//Users/kuan-lin.huang/Projects/AgentMultiverse/.fmcache/**)",
+      "Read(//Users/kuan-lin.huang/Projects/AgentMultiverse/README.md)",
+      "Edit(//Users/kuan-lin.huang/Projects/AgentMultiverse/README.md)",
+      "Read(//Users/kuan-lin.huang/Projects/AgentMultiverse/framework/**)",
+      "Edit(//Users/kuan-lin.huang/Projects/AgentMultiverse/framework/**)"
+    ]
+  },
+  "env": {
+    "OMP_NUM_THREADS": "2",
+    "OPENBLAS_NUM_THREADS": "2",
+    "MKL_NUM_THREADS": "2",
+    "VECLIB_MAXIMUM_THREADS": "2",
+    "NUMEXPR_MAX_THREADS": "2"
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"$CLAUDE_PROJECT_DIR\"/.claude/hooks/blind_prior_runs.sh"
+          }
+        ]
+      }
+    ]
+  }
+}

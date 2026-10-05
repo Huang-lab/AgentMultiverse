@@ -1,0 +1,10 @@
+{
+ "cohort": "eadb2026_v4_free2",
+ "design": "free",
+ "replicates": 2,
+ "task": "Fine-map loci of the study eadb2026 (shared inputs in prep/eadb2026).\nChoose your own methods, reference panel, QC and parameters, and record every choice that could change the results.\nWrite the standard result tables (configs.tsv, pip.tsv, cs.tsv) with a pip.tsv row for every variant you fine-map (not only credible-set members), and check them with tools/check_outputs.py.\nBe economical: plan before acting, batch work into a few scripts, do not re-read files you have seen, keep messages short, and give a final reply of under 150 words (what you did, key credible sets, caveats).",
+ "scope": [
+  "files GCST90704646, GCST90704647 and GCST90704648",
+  "regions chr1_160641573_161717875, chr2_126514471_127669416, chr4_39697222_40806351, chr5_86379694_87613619, chr7_99435555_101135421"
+ ]
+}

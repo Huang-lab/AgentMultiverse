@@ -1,0 +1,10 @@
+{
+ "cohort": "eadb2026_v6_full",
+ "design": "free",
+ "replicates": 2,
+ "task": "Fine-map the loci of the study eadb2026 (shared inputs in prep/eadb2026), genome-wide.\nChoose your own methods, reference panel, QC and parameters, and record every choice that could change the results.\nWrite the standard result tables (configs.tsv, pip.tsv, cs.tsv) with a pip.tsv row for every variant you fine-map (not only credible-set members), and check them with tools/check_outputs.py.\nTake as long as the analysis needs: long jobs can run in the background and be polled, and heavy steps should go through the shared memory gate.\nYour final reply should be a report of under 300 words: what you did, the key credible sets, what you could not resolve, and the sources you relied on.",
+ "scope": [
+  "files GCST90704646, GCST90704647 and GCST90704648",
+  "every candidate region in prep/eadb2026/regions.tsv (including the MHC and APOE); if you decide to leave a region or file out, say so and why in a decision entry"
+ ]
+}
